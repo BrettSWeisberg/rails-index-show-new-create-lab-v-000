@@ -2,6 +2,7 @@
 <%@coupons.each do |coupon| %>
 <ul>
   <li><%= coupon.store %></li>
-  <li><%= coupon.coupon_code %></li>
+  <li><%= coupon.coupon_code, coupon_path(@coupon) %></li>
+
 <%end%>
 </ul>
